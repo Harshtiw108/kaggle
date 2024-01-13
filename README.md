@@ -10,3 +10,6 @@ from sklearn.metrics import accuracy_score, classification_report
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 import torch
 from torch.utils.data import DataLoader, TensorDataset, random_split
+# Load the training and testing datasets
+train_essays = pd.read_csv("/kaggle/input/llm-detect-ai-generated-text/train_essays.csv")
+test_essays = pd.read_csv("/kaggle/input/llm-detect-ai-generated-text/test_essays.csv")
